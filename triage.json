@@ -1,0 +1,115 @@
+{
+  "_meta": {
+    "version": "0.1.0",
+    "status": "UNVERIFIED PROTOTYPE DATA - red flags and self-care limits must be reviewed by a clinician before use.",
+    "severity_levels": {
+      "emergency": "Call the emergency number / go to an emergency department now.",
+      "urgent_doctor": "Do not self-treat; see a doctor today."
+    }
+  },
+  "emergency_number": "1122",
+  "emergency_label": "Rescue 1122 (Pakistan)",
+  "general_red_flags": [
+    {"id": "chest_pain", "text": "Chest pain, pressure or tightness", "severity": "emergency"},
+    {"id": "breathing_difficulty", "text": "Difficulty breathing or shortness of breath at rest", "severity": "emergency"},
+    {"id": "collapse_drowsy", "text": "Fainting, collapse, or very drowsy / hard to wake", "severity": "emergency"},
+    {"id": "anaphylaxis", "text": "Swelling of the face, lips or tongue, or a widespread rash with feeling very unwell", "severity": "emergency"},
+    {"id": "feels_seriously_ill", "text": "You feel extremely unwell or something feels seriously wrong", "severity": "urgent_doctor"}
+  ],
+  "complaints": {
+    "headache": {
+      "label": "Headache",
+      "candidates": ["paracetamol", "ibuprofen"],
+      "max_self_care_days": 3,
+      "stop_advice": "Stop self-treatment and see a doctor if the headache lasts more than 3 days, keeps coming back, gets worse, or you need painkillers on more than 2-3 days a week.",
+      "red_flags": [
+        {"id": "thunderclap", "text": "Sudden, severe 'worst ever' headache that reached full strength within about a minute", "severity": "emergency"},
+        {"id": "fever_stiff_neck_rash", "text": "Headache with fever AND a stiff neck, or a rash that does not fade when pressed", "severity": "emergency"},
+        {"id": "head_injury", "text": "Headache after a head injury", "severity": "emergency"},
+        {"id": "neuro_deficit", "text": "Weakness, numbness, drooping face, slurred speech or difficulty walking", "severity": "emergency"},
+        {"id": "confusion_seizure", "text": "Confusion, change in behaviour, or a seizure (fit)", "severity": "emergency"},
+        {"id": "vision_change", "text": "Loss of vision, double vision, or a painful red eye", "severity": "urgent_doctor"},
+        {"id": "pregnant_postpartum", "text": "You are pregnant or gave birth in the last 6 weeks", "severity": "urgent_doctor"},
+        {"id": "new_over_50", "text": "You are over 50 and this is a new or different type of headache", "severity": "urgent_doctor"},
+        {"id": "worse_lying_vomiting", "text": "Headache that wakes you, gets worse lying down or coughing, or comes with repeated vomiting", "severity": "urgent_doctor"}
+      ]
+    },
+    "fever": {
+      "label": "Fever",
+      "candidates": ["paracetamol", "ibuprofen"],
+      "max_self_care_days": 3,
+      "stop_advice": "See a doctor if the fever lasts more than 3 days, goes above 40 C, or you get new symptoms. In dengue season, get tested if fever persists.",
+      "red_flags": [
+        {"id": "very_high_temp", "text": "Temperature of 40 C (104 F) or higher", "severity": "urgent_doctor"},
+        {"id": "stiff_neck_rash", "text": "Stiff neck, or a rash that does not fade when pressed", "severity": "emergency"},
+        {"id": "dengue_warning", "text": "Bleeding gums or nose, blood in vomit or stool, unusual bruising, severe tummy pain or repeated vomiting", "severity": "emergency"},
+        {"id": "confusion_seizure", "text": "Confusion or a seizure (fit)", "severity": "emergency"},
+        {"id": "dehydration", "text": "Cannot keep fluids down, or passing very little urine", "severity": "urgent_doctor"},
+        {"id": "immunocompromised", "text": "You are on chemotherapy, long-term steroid tablets, or have a weakened immune system", "severity": "urgent_doctor"}
+      ]
+    },
+    "musculoskeletal_pain": {
+      "label": "Mild muscle / joint / back pain",
+      "candidates": ["paracetamol", "ibuprofen"],
+      "max_self_care_days": 5,
+      "stop_advice": "See a doctor if the pain lasts more than 5 days, gets worse, or stops you from normal activities.",
+      "red_flags": [
+        {"id": "injury_deformity", "text": "After a fall or injury, with deformity, or you cannot bear weight or move the limb", "severity": "urgent_doctor"},
+        {"id": "hot_swollen_joint", "text": "A hot, red, swollen joint, especially with fever", "severity": "urgent_doctor"},
+        {"id": "back_neuro", "text": "Back pain with leg weakness or numbness, numbness around the genitals or buttocks, or new bladder/bowel problems", "severity": "emergency"},
+        {"id": "cardiac_pattern", "text": "Pain in the chest, left arm, jaw or upper back with sweating or breathlessness", "severity": "emergency"},
+        {"id": "calf_swelling", "text": "Pain in one calf with swelling, warmth or redness", "severity": "urgent_doctor"}
+      ]
+    },
+    "common_cold": {
+      "label": "Common cold symptoms (aches, sore throat, mild fever)",
+      "candidates": ["paracetamol", "ibuprofen"],
+      "max_self_care_days": 7,
+      "stop_advice": "See a doctor if symptoms last more than 7 days, get worse after improving, or you develop high fever, ear or face pain.",
+      "red_flags": [
+        {"id": "high_fever_3d", "text": "Fever above 39 C lasting more than 3 days", "severity": "urgent_doctor"},
+        {"id": "coughing_blood", "text": "Coughing up blood", "severity": "urgent_doctor"},
+        {"id": "wheeze", "text": "Wheezing or noisy breathing", "severity": "urgent_doctor"},
+        {"id": "worse_after_better", "text": "Symptoms improved and then suddenly got much worse", "severity": "urgent_doctor"}
+      ]
+    },
+    "allergic_rhinitis": {
+      "label": "Hay fever / allergic runny nose",
+      "candidates": ["cetirizine"],
+      "max_self_care_days": 14,
+      "stop_advice": "See a doctor or pharmacist if there is no improvement after 14 days, or symptoms affect your sleep or breathing.",
+      "red_flags": [
+        {"id": "wheeze_asthma", "text": "Wheezing, or your asthma is getting worse", "severity": "urgent_doctor"},
+        {"id": "eye_pain_vision", "text": "Eye pain or changes in vision", "severity": "urgent_doctor"},
+        {"id": "one_sided_bloody", "text": "Blocked on one side only, with blood or a foul-smelling discharge", "severity": "urgent_doctor"}
+      ]
+    },
+    "heartburn": {
+      "label": "Heartburn / indigestion",
+      "candidates": ["calcium_carbonate"],
+      "max_self_care_days": 14,
+      "stop_advice": "See a doctor if you need an antacid for more than 14 days, or symptoms keep returning.",
+      "red_flags": [
+        {"id": "swallowing", "text": "Difficulty or pain when swallowing", "severity": "urgent_doctor"},
+        {"id": "gi_bleed", "text": "Vomiting blood or 'coffee grounds', or black tarry stools", "severity": "emergency"},
+        {"id": "weight_loss", "text": "Weight loss you cannot explain", "severity": "urgent_doctor"},
+        {"id": "cardiac_pattern", "text": "Chest pain spreading to the arm, jaw or neck, or with sweating or breathlessness", "severity": "emergency"},
+        {"id": "new_over_55", "text": "You are over 55 and this is new heartburn", "severity": "urgent_doctor"},
+        {"id": "persistent_vomiting", "text": "Repeated vomiting", "severity": "urgent_doctor"}
+      ]
+    },
+    "diarrhoea": {
+      "label": "Mild diarrhoea",
+      "candidates": ["loperamide"],
+      "max_self_care_days": 2,
+      "stop_advice": "Keep drinking fluids / ORS. See a doctor if diarrhoea lasts more than 48 hours, or blood, fever or severe pain appears.",
+      "red_flags": [
+        {"id": "blood_stool", "text": "Blood or mucus in the stool, or black stools", "severity": "urgent_doctor"},
+        {"id": "fever", "text": "Fever of 38 C or higher", "severity": "urgent_doctor"},
+        {"id": "severe_abdominal_pain", "text": "Severe tummy pain or a swollen tummy", "severity": "urgent_doctor"},
+        {"id": "dehydration", "text": "Signs of dehydration: very little or dark urine, dizziness on standing, very dry mouth", "severity": "urgent_doctor"},
+        {"id": "after_antibiotics_hospital", "text": "Started after taking antibiotics or a hospital stay", "severity": "urgent_doctor"}
+      ]
+    }
+  }
+}

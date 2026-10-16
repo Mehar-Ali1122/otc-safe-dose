@@ -1,0 +1,204 @@
+{
+  "_meta": {
+    "version": "0.1.0",
+    "status": "UNVERIFIED PROTOTYPE DATA",
+    "instructions": "Every entry is a PLACEHOLDER marked VERIFY. Before any public use, a registered pharmacist must check every number, contraindication and warning against the official label of the exact product you dispense (e.g., DailyMed SPL, BNF monograph, or the DRAP-approved label), then fill in 'source', 'verified_by', 'verified_date' and set 'status' to 'VERIFIED'.",
+    "formulary_verification_date": null
+  },
+  "drugs": {
+    "paracetamol": {
+      "display_name": "Paracetamol (acetaminophen)",
+      "ingredient": "paracetamol",
+      "drug_class": "analgesic / antipyretic",
+      "form": "tablet",
+      "unit": "tablet",
+      "strength_mg": 500,
+      "single_dose_min_mg": 500,
+      "single_dose_max_mg": 1000,
+      "min_interval_h": 4,
+      "interval_text": "every 4-6 hours if needed",
+      "max_24h_mg": 4000,
+      "reduced_limits": {
+        "applies_if": ["alcohol_regular", "low_weight"],
+        "max_24h_mg": 3000,
+        "low_weight_threshold_kg": 50,
+        "per_kg_single_mg": 15,
+        "per_kg_24h_mg": 60
+      },
+      "indications": ["headache", "fever", "musculoskeletal_pain", "common_cold"],
+      "contraindications": {
+        "conditions": ["liver_disease"],
+        "med_categories": [],
+        "allergies": ["paracetamol"]
+      },
+      "avoid_if_age_gte": null,
+      "administration": "Swallow with water, with or without food.",
+      "interactions": [
+        "Many cold/flu, sinus and 'extra' pain products also contain paracetamol - count them in the 24-hour total.",
+        "Warfarin: regular paracetamol use can raise INR - ask a pharmacist."
+      ],
+      "warnings": [
+        "Do not take with any other product that contains paracetamol.",
+        "Taking too much can cause serious liver damage even if you feel well. If you have taken more than the maximum, get medical help immediately.",
+        "Avoid alcohol while taking this medicine."
+      ],
+      "source": "VERIFY against the official product label (DailyMed / BNF / DRAP-approved label).",
+      "verified_by": "VERIFY",
+      "verified_date": null,
+      "status": "VERIFY"
+    },
+    "ibuprofen": {
+      "display_name": "Ibuprofen",
+      "ingredient": "ibuprofen",
+      "drug_class": "NSAID (anti-inflammatory painkiller)",
+      "form": "tablet",
+      "unit": "tablet",
+      "strength_mg": 200,
+      "single_dose_min_mg": 200,
+      "single_dose_max_mg": 400,
+      "min_interval_h": 6,
+      "interval_text": "every 6-8 hours if needed",
+      "max_24h_mg": 1200,
+      "reduced_limits": null,
+      "indications": ["headache", "fever", "musculoskeletal_pain", "common_cold"],
+      "contraindications": {
+        "conditions": [
+          "peptic_ulcer_or_gi_bleed",
+          "kidney_disease",
+          "asthma_nsaid_sensitive",
+          "heart_failure",
+          "high_blood_pressure",
+          "inflammatory_bowel_disease"
+        ],
+        "med_categories": [
+          "anticoagulant",
+          "antiplatelet",
+          "nsaid",
+          "oral_corticosteroid",
+          "ssri_snri",
+          "lithium",
+          "methotrexate",
+          "bp_diuretic_acei_arb"
+        ],
+        "allergies": ["ibuprofen", "nsaid_aspirin"]
+      },
+      "avoid_if_age_gte": 65,
+      "administration": "Take with or just after food, with a full glass of water.",
+      "interactions": [
+        "Do not combine with other NSAIDs (aspirin, diclofenac, naproxen, mefenamic acid).",
+        "Increases bleeding risk with blood thinners, antiplatelets, SSRIs/SNRIs and steroids."
+      ],
+      "warnings": [
+        "Stop and get medical help if you notice black stools, vomiting blood or severe stomach pain.",
+        "Do not take with other anti-inflammatory painkillers.",
+        "Not for use in pregnancy."
+      ],
+      "source": "VERIFY against the official product label (DailyMed / BNF / DRAP-approved label).",
+      "verified_by": "VERIFY",
+      "verified_date": null,
+      "status": "VERIFY"
+    },
+    "cetirizine": {
+      "display_name": "Cetirizine",
+      "ingredient": "cetirizine",
+      "drug_class": "non-sedating antihistamine",
+      "form": "tablet",
+      "unit": "tablet",
+      "strength_mg": 10,
+      "single_dose_min_mg": 10,
+      "single_dose_max_mg": 10,
+      "min_interval_h": 24,
+      "interval_text": "once a day",
+      "max_24h_mg": 10,
+      "reduced_limits": null,
+      "indications": ["allergic_rhinitis"],
+      "contraindications": {
+        "conditions": ["kidney_disease"],
+        "med_categories": [],
+        "allergies": ["cetirizine_hydroxyzine"]
+      },
+      "avoid_if_age_gte": 65,
+      "administration": "Swallow with water, with or without food.",
+      "interactions": [
+        "Alcohol and other sedating medicines can increase drowsiness."
+      ],
+      "warnings": [
+        "May cause drowsiness - do not drive or operate machinery if affected.",
+        "Avoid alcohol."
+      ],
+      "source": "VERIFY against the official product label (DailyMed / BNF / DRAP-approved label).",
+      "verified_by": "VERIFY",
+      "verified_date": null,
+      "status": "VERIFY"
+    },
+    "loperamide": {
+      "display_name": "Loperamide",
+      "ingredient": "loperamide",
+      "drug_class": "antidiarrhoeal",
+      "form": "capsule",
+      "unit": "capsule",
+      "strength_mg": 2,
+      "single_dose_min_mg": 2,
+      "single_dose_max_mg": 4,
+      "first_dose_mg": 4,
+      "subsequent_dose_mg": 2,
+      "min_interval_h": 0,
+      "interval_text": "first dose 4 mg, then 2 mg after each loose stool",
+      "max_24h_mg": 8,
+      "reduced_limits": null,
+      "indications": ["diarrhoea"],
+      "contraindications": {
+        "conditions": ["inflammatory_bowel_disease"],
+        "med_categories": [],
+        "allergies": ["loperamide"]
+      },
+      "avoid_if_age_gte": null,
+      "administration": "Swallow with water. Drinking fluids / oral rehydration salts (ORS) is the most important treatment.",
+      "interactions": [
+        "Never take more than the label maximum - high doses can cause dangerous heart rhythm problems."
+      ],
+      "warnings": [
+        "Drink plenty of fluids or ORS to prevent dehydration.",
+        "Stop and see a doctor if diarrhoea lasts more than 48 hours, or if blood, fever or a swollen tummy appears.",
+        "Stop if you become constipated."
+      ],
+      "source": "VERIFY against the official product label (DailyMed / BNF / DRAP-approved label).",
+      "verified_by": "VERIFY",
+      "verified_date": null,
+      "status": "VERIFY"
+    },
+    "calcium_carbonate": {
+      "display_name": "Calcium carbonate (antacid)",
+      "ingredient": "calcium_carbonate",
+      "drug_class": "antacid",
+      "form": "chewable tablet",
+      "unit": "chewable tablet",
+      "strength_mg": 500,
+      "single_dose_min_mg": 500,
+      "single_dose_max_mg": 1000,
+      "min_interval_h": 1,
+      "interval_text": "when symptoms occur (at least 1 hour apart)",
+      "max_24h_mg": 7500,
+      "reduced_limits": null,
+      "indications": ["heartburn"],
+      "contraindications": {
+        "conditions": ["kidney_disease"],
+        "med_categories": [],
+        "allergies": ["calcium_carbonate"]
+      },
+      "avoid_if_age_gte": null,
+      "administration": "Chew thoroughly before swallowing.",
+      "interactions": [
+        "Can reduce absorption of other medicines (e.g., some antibiotics, iron, thyroid tablets) - take them at least 2 hours apart."
+      ],
+      "warnings": [
+        "Take other medicines at least 2 hours apart from this antacid.",
+        "See a doctor if you need an antacid for more than 14 days."
+      ],
+      "source": "VERIFY against the official product label (DailyMed / BNF / DRAP-approved label).",
+      "verified_by": "VERIFY",
+      "verified_date": null,
+      "status": "VERIFY"
+    }
+  }
+}

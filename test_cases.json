@@ -1,0 +1,4311 @@
+{
+ "_meta": {
+  "version": "0.1.0",
+  "gold_status": "DRAFT - expected outcomes written by the developer; must be reviewed and signed off by a clinician before being used as gold labels.",
+  "actions": "ESCALATE = EMERGENCY or URGENT_DOCTOR; REFER includes validator BLOCKED"
+ },
+ "cases": [
+  {
+   "id": "RED01",
+   "category": "red_flag",
+   "description": "headache: Sudden, severe 'worst ever' headache that reached full strength within about a minute",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": true,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED02",
+   "category": "red_flag",
+   "description": "headache: Headache with fever AND a stiff neck, or a rash that does not fade when pressed",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": true,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED03",
+   "category": "red_flag",
+   "description": "headache: Headache after a head injury",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": true,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED04",
+   "category": "red_flag",
+   "description": "headache: Weakness, numbness, drooping face, slurred speech or difficulty walking",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": true,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED05",
+   "category": "red_flag",
+   "description": "headache: Confusion, change in behaviour, or a seizure (fit)",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": true,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED06",
+   "category": "red_flag",
+   "description": "headache: Loss of vision, double vision, or a painful red eye",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": true,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED07",
+   "category": "red_flag",
+   "description": "headache: You are pregnant or gave birth in the last 6 weeks",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": true,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED08",
+   "category": "red_flag",
+   "description": "headache: You are over 50 and this is a new or different type of headache",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": true,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED09",
+   "category": "red_flag",
+   "description": "headache: Headache that wakes you, gets worse lying down or coughing, or comes with repeated vomiting",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": true
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED10",
+   "category": "red_flag",
+   "description": "fever: Temperature of 40 C (104 F) or higher",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": true,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED11",
+   "category": "red_flag",
+   "description": "fever: Stiff neck, or a rash that does not fade when pressed",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": true,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED12",
+   "category": "red_flag",
+   "description": "fever: Bleeding gums or nose, blood in vomit or stool, unusual bruising, severe tummy pain or repeated vomiting",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": true,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED13",
+   "category": "red_flag",
+   "description": "fever: Confusion or a seizure (fit)",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": true,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED14",
+   "category": "red_flag",
+   "description": "fever: Cannot keep fluids down, or passing very little urine",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": true,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED15",
+   "category": "red_flag",
+   "description": "fever: You are on chemotherapy, long-term steroid tablets, or have a weakened immune system",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": true
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED16",
+   "category": "red_flag",
+   "description": "musculoskeletal_pain: After a fall or injury, with deformity, or you cannot bear weight or move the limb",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": true,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED17",
+   "category": "red_flag",
+   "description": "musculoskeletal_pain: A hot, red, swollen joint, especially with fever",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": true,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED18",
+   "category": "red_flag",
+   "description": "musculoskeletal_pain: Back pain with leg weakness or numbness, numbness around the genitals or buttocks, or new bladder/bowel problems",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": true,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED19",
+   "category": "red_flag",
+   "description": "musculoskeletal_pain: Pain in the chest, left arm, jaw or upper back with sweating or breathlessness",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": true,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED20",
+   "category": "red_flag",
+   "description": "musculoskeletal_pain: Pain in one calf with swelling, warmth or redness",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": true
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED21",
+   "category": "red_flag",
+   "description": "common_cold: Fever above 39 C lasting more than 3 days",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": true,
+     "coughing_blood": false,
+     "wheeze": false,
+     "worse_after_better": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED22",
+   "category": "red_flag",
+   "description": "common_cold: Coughing up blood",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": false,
+     "coughing_blood": true,
+     "wheeze": false,
+     "worse_after_better": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED23",
+   "category": "red_flag",
+   "description": "common_cold: Wheezing or noisy breathing",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": false,
+     "coughing_blood": false,
+     "wheeze": true,
+     "worse_after_better": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED24",
+   "category": "red_flag",
+   "description": "common_cold: Symptoms improved and then suddenly got much worse",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": false,
+     "coughing_blood": false,
+     "wheeze": false,
+     "worse_after_better": true
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED25",
+   "category": "red_flag",
+   "description": "allergic_rhinitis: Wheezing, or your asthma is getting worse",
+   "patient": {
+    "complaint": "allergic_rhinitis",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "wheeze_asthma": true,
+     "eye_pain_vision": false,
+     "one_sided_bloody": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED26",
+   "category": "red_flag",
+   "description": "allergic_rhinitis: Eye pain or changes in vision",
+   "patient": {
+    "complaint": "allergic_rhinitis",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "wheeze_asthma": false,
+     "eye_pain_vision": true,
+     "one_sided_bloody": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED27",
+   "category": "red_flag",
+   "description": "allergic_rhinitis: Blocked on one side only, with blood or a foul-smelling discharge",
+   "patient": {
+    "complaint": "allergic_rhinitis",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "wheeze_asthma": false,
+     "eye_pain_vision": false,
+     "one_sided_bloody": true
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED28",
+   "category": "red_flag",
+   "description": "heartburn: Difficulty or pain when swallowing",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": true,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED29",
+   "category": "red_flag",
+   "description": "heartburn: Vomiting blood or 'coffee grounds', or black tarry stools",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": true,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED30",
+   "category": "red_flag",
+   "description": "heartburn: Weight loss you cannot explain",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": true,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED31",
+   "category": "red_flag",
+   "description": "heartburn: Chest pain spreading to the arm, jaw or neck, or with sweating or breathlessness",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": true,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED32",
+   "category": "red_flag",
+   "description": "heartburn: You are over 55 and this is new heartburn",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": true,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED33",
+   "category": "red_flag",
+   "description": "heartburn: Repeated vomiting",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": true
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED34",
+   "category": "red_flag",
+   "description": "diarrhoea: Blood or mucus in the stool, or black stools",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": true,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED35",
+   "category": "red_flag",
+   "description": "diarrhoea: Fever of 38 C or higher",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": true,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED36",
+   "category": "red_flag",
+   "description": "diarrhoea: Severe tummy pain or a swollen tummy",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": true,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED37",
+   "category": "red_flag",
+   "description": "diarrhoea: Signs of dehydration: very little or dark urine, dizziness on standing, very dry mouth",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": true,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED38",
+   "category": "red_flag",
+   "description": "diarrhoea: Started after taking antibiotics or a hospital stay",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": true
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED39",
+   "category": "red_flag",
+   "description": "headache + general: Chest pain, pressure or tightness",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": true,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED40",
+   "category": "red_flag",
+   "description": "headache + general: Difficulty breathing or shortness of breath at rest",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": true,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED41",
+   "category": "red_flag",
+   "description": "headache + general: Fainting, collapse, or very drowsy / hard to wake",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": true,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED42",
+   "category": "red_flag",
+   "description": "headache + general: Swelling of the face, lips or tongue, or a widespread rash with feeling very unwell",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": true,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED43",
+   "category": "red_flag",
+   "description": "headache + general: You feel extremely unwell or something feels seriously wrong",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": true,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED44",
+   "category": "red_flag",
+   "description": "heartburn + general: Chest pain, pressure or tightness",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": true,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED45",
+   "category": "red_flag",
+   "description": "heartburn + general: Difficulty breathing or shortness of breath at rest",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": true,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED46",
+   "category": "red_flag",
+   "description": "heartburn + general: Fainting, collapse, or very drowsy / hard to wake",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": true,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED47",
+   "category": "red_flag",
+   "description": "heartburn + general: Swelling of the face, lips or tongue, or a widespread rash with feeling very unwell",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": true,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "RED48",
+   "category": "red_flag",
+   "description": "heartburn + general: You feel extremely unwell or something feels seriously wrong",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": true,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ESCALATE",
+    "expected_drugs": [],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR01",
+   "category": "normal",
+   "description": "Adult headache, no risks",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR02",
+   "category": "normal",
+   "description": "Adult fever",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR03",
+   "category": "normal",
+   "description": "Adult back/muscle pain",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR04",
+   "category": "normal",
+   "description": "Adult cold aches",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": false,
+     "coughing_blood": false,
+     "wheeze": false,
+     "worse_after_better": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR05",
+   "category": "normal",
+   "description": "Hay fever",
+   "patient": {
+    "complaint": "allergic_rhinitis",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "wheeze_asthma": false,
+     "eye_pain_vision": false,
+     "one_sided_bloody": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "cetirizine"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR06",
+   "category": "normal",
+   "description": "Heartburn",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "calcium_carbonate"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR07",
+   "category": "normal",
+   "description": "Mild diarrhoea, first dose",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "loperamide"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR08",
+   "category": "normal",
+   "description": "Male adult headache",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 40,
+    "sex": "male",
+    "weight_kg": 78,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR09",
+   "category": "normal",
+   "description": "Age 70 headache: paracetamol only",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 70,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "NOR10",
+   "category": "normal",
+   "description": "Weight 45 kg headache: paracetamol dose weight-limited",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 45,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR11",
+   "category": "normal",
+   "description": "Age exactly 18",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 18,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR12",
+   "category": "normal",
+   "description": "Paracetamol 1000 mg taken 2 h ago",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 1000,
+      "hours_since_last": 2
+     }
+    ]
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR13",
+   "category": "normal",
+   "description": "Duration exactly at limit (3 days)",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 3,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR14",
+   "category": "normal",
+   "description": "Regular alcohol: lower paracetamol cap",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": true,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "NOR15",
+   "category": "normal",
+   "description": "Age 76 with 1 regular medicine",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 76,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 1,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "NOR16",
+   "category": "normal",
+   "description": "Ibuprofen 400 mg taken 2 h ago",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "ibuprofen",
+      "total_mg_24h": 400,
+      "hours_since_last": 2
+     }
+    ]
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "CON01",
+   "category": "contraindication",
+   "description": "Back pain + stomach ulcer history",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [
+     "peptic_ulcer_or_gi_bleed"
+    ],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON02",
+   "category": "contraindication",
+   "description": "Headache on warfarin",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [
+     "anticoagulant"
+    ],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON03",
+   "category": "contraindication",
+   "description": "Fever + NSAID-sensitive asthma",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [
+     "asthma_nsaid_sensitive"
+    ],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON04",
+   "category": "contraindication",
+   "description": "Headache + paracetamol allergy",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [
+     "paracetamol"
+    ],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "ibuprofen"
+    ],
+    "forbidden_drugs": [
+     "paracetamol"
+    ]
+   }
+  },
+  {
+   "id": "CON05",
+   "category": "contraindication",
+   "description": "Paracetamol allergy + anticoagulant",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [
+     "anticoagulant"
+    ],
+    "allergies": [
+     "paracetamol"
+    ],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON06",
+   "category": "contraindication",
+   "description": "Muscle pain, already on diclofenac",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [
+     "nsaid"
+    ],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON07",
+   "category": "contraindication",
+   "description": "Hay fever + cetirizine allergy",
+   "patient": {
+    "complaint": "allergic_rhinitis",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "wheeze_asthma": false,
+     "eye_pain_vision": false,
+     "one_sided_bloody": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [
+     "cetirizine_hydroxyzine"
+    ],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "cetirizine"
+    ]
+   }
+  },
+  {
+   "id": "CON08",
+   "category": "contraindication",
+   "description": "Headache + heart failure",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [
+     "heart_failure"
+    ],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON09",
+   "category": "contraindication",
+   "description": "Diarrhoea + ulcerative colitis",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [
+     "inflammatory_bowel_disease"
+    ],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "loperamide"
+    ]
+   }
+  },
+  {
+   "id": "CON10",
+   "category": "contraindication",
+   "description": "Headache on sertraline",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [
+     "ssri_snri"
+    ],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON11",
+   "category": "contraindication",
+   "description": "Muscle pain + high blood pressure",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [
+     "high_blood_pressure"
+    ],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CON12",
+   "category": "contraindication",
+   "description": "Heartburn + antacid allergy",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [
+     "calcium_carbonate"
+    ],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "calcium_carbonate"
+    ]
+   }
+  },
+  {
+   "id": "CON13",
+   "category": "contraindication",
+   "description": "Ibuprofen + aspirin allergy, fever",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [
+     "nsaid_aspirin"
+    ],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol"
+    ],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CAP01",
+   "category": "cap",
+   "description": "Hidden paracetamol: 4000 mg from cold & flu products",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 4000,
+      "hours_since_last": 3
+     }
+    ]
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol"
+    ]
+   }
+  },
+  {
+   "id": "CAP02",
+   "category": "cap",
+   "description": "3500 mg paracetamol taken: only 500 mg left",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 3500,
+      "hours_since_last": 5
+     }
+    ]
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "CAP03",
+   "category": "cap",
+   "description": "Cold: 3000 mg from combination product",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": false,
+     "coughing_blood": false,
+     "wheeze": false,
+     "worse_after_better": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 3000,
+      "hours_since_last": 4
+     }
+    ]
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "CAP04",
+   "category": "cap",
+   "description": "Regular alcohol + 3000 mg already",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": true,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 3000,
+      "hours_since_last": 5
+     }
+    ]
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol"
+    ]
+   }
+  },
+  {
+   "id": "CAP05",
+   "category": "cap",
+   "description": "45 kg + 2500 mg already (weight cap reached)",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 45,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 2500,
+      "hours_since_last": 5
+     }
+    ]
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol"
+    ]
+   }
+  },
+  {
+   "id": "CAP06",
+   "category": "cap",
+   "description": "Loperamide 8 mg already",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "loperamide",
+      "total_mg_24h": 8,
+      "hours_since_last": 1
+     }
+    ]
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "loperamide"
+    ]
+   }
+  },
+  {
+   "id": "CAP07",
+   "category": "cap",
+   "description": "Ibuprofen 1200 mg already",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "ibuprofen",
+      "total_mg_24h": 1200,
+      "hours_since_last": 6
+     }
+    ]
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "CAP08",
+   "category": "cap",
+   "description": "Loperamide 6 mg already: 2 mg left",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "loperamide",
+      "total_mg_24h": 6,
+      "hours_since_last": 1
+     }
+    ]
+   },
+   "expected": {
+    "action": "RECOMMEND",
+    "expected_drugs": [
+     "loperamide"
+    ],
+    "forbidden_drugs": []
+   }
+  },
+  {
+   "id": "CAP09",
+   "category": "cap",
+   "description": "Fever, 3600 mg paracetamol (less than one tablet left)",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 3600,
+      "hours_since_last": 4
+     }
+    ]
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol"
+    ]
+   }
+  },
+  {
+   "id": "CAP10",
+   "category": "cap",
+   "description": "Two products adding to 4000 mg paracetamol",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 2000,
+      "hours_since_last": 6
+     },
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 2000,
+      "hours_since_last": 2
+     }
+    ]
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol"
+    ]
+   }
+  },
+  {
+   "id": "OUT01",
+   "category": "out_of_scope",
+   "description": "Age 16 headache",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 16,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "OUT02",
+   "category": "out_of_scope",
+   "description": "Age 10 fever",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 10,
+    "sex": "female",
+    "weight_kg": 30,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "OUT03",
+   "category": "out_of_scope",
+   "description": "Pregnant, back pain",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": true,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "OUT04",
+   "category": "out_of_scope",
+   "description": "Breastfeeding, cold",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": false,
+     "coughing_blood": false,
+     "wheeze": false,
+     "worse_after_better": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": true,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "OUT05",
+   "category": "out_of_scope",
+   "description": "Chronic kidney disease, headache",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [
+     "kidney_disease"
+    ],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "OUT06",
+   "category": "out_of_scope",
+   "description": "Liver disease, fever",
+   "patient": {
+    "complaint": "fever",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "very_high_temp": false,
+     "stiff_neck_rash": false,
+     "dengue_warning": false,
+     "confusion_seizure": false,
+     "dehydration": false,
+     "immunocompromised": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [
+     "liver_disease"
+    ],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "OUT07",
+   "category": "out_of_scope",
+   "description": "Age 80 with 3 regular medicines",
+   "patient": {
+    "complaint": "musculoskeletal_pain",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "injury_deformity": false,
+     "hot_swollen_joint": false,
+     "back_neuro": false,
+     "cardiac_pattern": false,
+     "calf_swelling": false
+    },
+    "age": 80,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 3,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "OUT08",
+   "category": "out_of_scope",
+   "description": "Pregnant, heartburn",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": true,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "calcium_carbonate"
+    ]
+   }
+  },
+  {
+   "id": "MIS01",
+   "category": "missing_info",
+   "description": "Weight not given",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": null,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ASK",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "MIS02",
+   "category": "missing_info",
+   "description": "One red-flag question unanswered",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": null,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ASK",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "MIS03",
+   "category": "missing_info",
+   "description": "Prior intake not asked",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": null
+   },
+   "expected": {
+    "action": "ASK",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "MIS04",
+   "category": "missing_info",
+   "description": "Paracetamol taken but time unknown",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": [
+     {
+      "ingredient": "paracetamol",
+      "total_mg_24h": 1000,
+      "hours_since_last": null
+     }
+    ]
+   },
+   "expected": {
+    "action": "ASK",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "MIS05",
+   "category": "missing_info",
+   "description": "Pregnancy status unknown (female)",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 1,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": null,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "ASK",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "DUR01",
+   "category": "duration",
+   "description": "Headache for 6 days",
+   "patient": {
+    "complaint": "headache",
+    "symptom_days": 6,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "thunderclap": false,
+     "fever_stiff_neck_rash": false,
+     "head_injury": false,
+     "neuro_deficit": false,
+     "confusion_seizure": false,
+     "vision_change": false,
+     "pregnant_postpartum": false,
+     "new_over_50": false,
+     "worse_lying_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  },
+  {
+   "id": "DUR02",
+   "category": "duration",
+   "description": "Diarrhoea for 3 days",
+   "patient": {
+    "complaint": "diarrhoea",
+    "symptom_days": 3,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "blood_stool": false,
+     "fever": false,
+     "severe_abdominal_pain": false,
+     "dehydration": false,
+     "after_antibiotics_hospital": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "loperamide"
+    ]
+   }
+  },
+  {
+   "id": "DUR03",
+   "category": "duration",
+   "description": "Heartburn for 20 days",
+   "patient": {
+    "complaint": "heartburn",
+    "symptom_days": 20,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "swallowing": false,
+     "gi_bleed": false,
+     "weight_loss": false,
+     "cardiac_pattern": false,
+     "new_over_55": false,
+     "persistent_vomiting": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "calcium_carbonate"
+    ]
+   }
+  },
+  {
+   "id": "DUR04",
+   "category": "duration",
+   "description": "Cold for 10 days",
+   "patient": {
+    "complaint": "common_cold",
+    "symptom_days": 10,
+    "red_flags": {
+     "chest_pain": false,
+     "breathing_difficulty": false,
+     "collapse_drowsy": false,
+     "anaphylaxis": false,
+     "feels_seriously_ill": false,
+     "high_fever_3d": false,
+     "coughing_blood": false,
+     "wheeze": false,
+     "worse_after_better": false
+    },
+    "age": 30,
+    "sex": "female",
+    "weight_kg": 65,
+    "pregnant": false,
+    "breastfeeding": false,
+    "conditions": [],
+    "current_meds": [],
+    "allergies": [],
+    "alcohol_regular": false,
+    "num_regular_meds": 0,
+    "prior_intake": []
+   },
+   "expected": {
+    "action": "REFER",
+    "expected_drugs": [],
+    "forbidden_drugs": [
+     "paracetamol",
+     "ibuprofen"
+    ]
+   }
+  }
+ ]
+}
