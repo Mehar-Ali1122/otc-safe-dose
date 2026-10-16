@@ -5,7 +5,7 @@ over-the-counter (OTC) medicines for common, self-limiting complaints:
 headache, fever, mild muscle/joint pain, common cold, hay fever, heartburn
 and mild diarrhoea.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-USERNAME/otc-safe-dose/blob/main/notebooks/OTC_Safe_Dose_Assistant_Explained.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mehar-Ali1122/otc-safe-dose/blob/main/notebooks/OTC_Safe_Dose_Assistant_Explained.ipynb)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![Tests](https://img.shields.io/badge/tests-60%20passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 > **Research prototype. Not a medical device. Not clinically validated.**
