@@ -14,7 +14,7 @@ and mild diarrhoea.
 
 | Recommendation (all safety checks passed) | Emergency screen (red flag) |
 |---|---|
-| ![Recommendation](docs/screenshots/recommendation.png) | ![Emergency](docs/screenshots/emergency.png) |
+   | ![Recommendation](recommendation.png) | ![Emergency](emergency.png) |
 
 ## Quick start in Google Colab
 
